@@ -1,0 +1,100 @@
+
+
+.all{
+	line-height:2.0;
+	font-family: "M PLUS Rounded 1c";
+	color:#543f32;
+}
+
+
+.clearfix:after{
+	content:"";
+	display:block;
+	clear:both;
+}
+
+
+h1{
+	background-image:url(img/made/Myリボン.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+
+	background-color:rgba(255,255,255,0.5);
+	background-blend-mode:lighten;
+
+	font-family: "M PLUS Rounded 1c";
+
+	color:#fff;
+	text-shadow:5px 5px 4px #f3003a;
+	text-align:center;
+	width:100%;
+	height:200px;
+	margin:auto;
+	padding-top:150px;
+}
+
+.scene1{
+	font-size:40px;
+}
+
+.scene2{
+	font-size:24px;
+}
+
+
+
+.box1{
+	width:80%;
+	margin:30px auto;
+	background-color:#fcf1f0;
+	border:solid 1px #ee827c;
+	border-radius:30px 30px;
+	padding:20px;
+}
+
+.box2{
+	margin:20px;
+}
+
+
+
+
+
+h2{
+	text-align:center;
+	color:#d7003a;
+	font-size:28px;
+	border-bottom:dotted 4px #ee827c;
+
+}
+
+h3{
+	color:#d7003a;
+	font-size:20px;
+	margin-top:20px;
+}
+
+
+
+
+.text1{
+	border-top:dotted 4px #ee827c;
+	margin-top:40px;
+	padding-top:20px;
+}
+
+.text2{
+	margin-top:20px;
+}
+
+.text3{
+	margin-top:20px;
+}
+
+
+
+
+
+
+
+
