@@ -1,0 +1,305 @@
+<!doctype html>
+
+<html lang="ja">
+
+<head>
+
+<meta charset="utf-8">
+
+<title>Myリボンを作る</title>
+
+<link href="original1.css" rel="stylesheet" type="text/css">
+<link href="all.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
+<link rel="icon" href="https://github.com/umorungit/Hundmadeko-bo-Beni/blob/main/icon2pg.jpg?raw=true">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+
+// script.js
+document.addEventListener('DOMContentLoaded', () => {
+  const hamburger = document.querySelector('.hamburger');
+  const nav = document.querySelector('.nav');
+
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    nav.classList.toggle('active');
+
+    // アクセシビリティ対応
+    const isOpen = hamburger.classList.contains('active');
+    hamburger.setAttribute('aria-expanded', isOpen);
+    nav.setAttribute('aria-hidden', !isOpen);
+  });
+
+  // メニューの外側をクリックした時の処理
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('.nav') && !e.target.closest('.hamburger') && nav.classList.contains('active')) {
+      hamburger.classList.remove('active');
+      nav.classList.remove('active');
+      hamburger.setAttribute('aria-expanded', false);
+      nav.setAttribute('aria-hidden', true);
+    }
+  });
+});
+</script>
+
+
+</head>
+
+
+
+<body>
+
+<p class="beni">
+ <a href="工房top5.html"><img alt="ロゴの画像" src="img/logo7.png"></a>
+</p>
+
+
+<div class="header">
+  <button class="hamburger" aria-label="メニュー" aria-controls="nav-menu" aria-expanded="false">
+    <span class="hamburger__line"></span>
+    <span class="hamburger__line"></span>
+    <span class="hamburger__line"></span>
+  </button>
+
+  <nav id="nav-menu" class="nav" aria-hidden="true">
+
+
+    <ul class="nav__list">
+      <li class="nav__item"><a href="https://umorungit.github.io/Hundmadeko-bo-Beni/" class="nav__link">TOP</a></li>
+      <li class="nav__item"><a href="https://umorungit.github.io/Hundmadeko-bo-Beni-omoi/" class="nav__link">工房Beniの想い</a></li>
+      <li class="nav__item"><a href="https://umorungit.github.io/Hundmadeko-bo-Beni-scene/" class="nav__link">こんなシーンに</a></li>
+      <li class="nav__item"><a href="#" class="nav__link">Myリボンを作る</a></li>
+      <li class="nav__item"><a href="#" class="nav__link">髪飾り一覧</a></li>
+      <li class="nav__item"><a href="#" class="nav__link">生地の色・模様一覧</a></li>
+      <li class="nav__item"><a href="#" class="nav__link">商品のご購入</a></li>
+      <li class="nav__item"><a href="#" class="nav__link">工房情報</a></li>
+      <li class="nav__item"><a href="#" class="nav__link">よくある質問</a></li>
+    </ul>
+  </nav>
+</div><!--header-->
+
+
+
+
+
+
+<div class="all">
+
+
+<h1>
+ <spn class="scene1">Made</spn><br>
+ <spn class="scene2">～Myリボンを作る～
+</spn></h1>
+
+
+
+<div class="box3">
+<div class="box1">
+
+<h2>Myリボンについて</h2>
+
+
+<div class="box2">
+<h3>①リボンの個数</h3>
+お好きな数つけることができます。おすすめは2～3個です♪
+
+
+
+<h3>②リボンのサイズ</h3>
+ご希望のサイズでお仕上げします！<br>
+
+☆おすすめは標準サイズ（※）です。<br>
+前からもリボンがチラッと見えて写真映えすること間違いなしっ♪<br>
+
+　　※標準サイズ…小→横幅16cm-縦7.5cm <br>
+　　　　　　　　　中→横幅19cm-縦8cm<br>
+　　　　　　　　　大→横幅23cm-縦7.5cm<br>
+　　※サイズ感は「<a href="#">完成品一覧</a>」にてご確認ください。
+
+
+
+<h3>③それぞれのリボンの色</h3>
+「<a href="">生地の色・模様一覧</a>」よりお選びいただき、『色の名前』をお伝えください。<br>
+
+
+
+<h3>④真ん中の色</h3>
+どの色の生地をお選びいただいても、追加料金は発生しません。お好きな生地をお選びください。
+
+
+
+<h3>⑤飾り紐の色</h3>
+パールに変更の場合は「パール」とご記入ください。
+
+<h3>⑥その他のオプション</h3>
+なしの場合は記入不要です
+
+
+<p class="text1">
+上記①～⑥をお決めいただき、<a href="#" target="_blank">LINE</a> or <a href="https://www.instagram.com/workshop_beni/" target="_blank">Instagram</a> 等で簡単にお伝えください。<br>
+<br>
+<p>記入例</p>
+
+
+（例1）①3個<br>
+　　 　②標準<br>
+　　 　③小→花柄ピンク<br>
+　　　 　中→白黒チェック<br>
+　　　 　大→白レース<br>
+　　 　④ピンク<br>
+　　 　⑤飾り紐→黒<br>
+<br>
+（例2）①2個<br>
+　　 　②中→18cm-7.5cm  大→20cm-8cm<br>
+　　 　③中→白黒チェック<br>
+　　 　　大→白レース<br>
+　　 　④花柄赤<br>
+　　 　⑤飾り紐→パール2に変更<br>
+　　　 ⑥つまみ細工→白1つ、黒1つ<br>
+
+<br>
+※大切な髪飾りですので、送信していただいたメッセージを確認させていただき次第、再度写真などにてご確認させていただきますので、お気軽にご連絡ください！
+
+</div><!--box2-->
+</div><!--box1-->
+
+
+
+
+<div class="box1">
+
+<h2>お値段について</h2>
+
+
+<div class="box2">
+<p class="text2">
+基本のお値段は「1-1.ベーシックタイプ」です。この4000円or4500円をベースに、カスタマイズする部分によって金額か変動していきます。<br>
+</p>
+
+
+<p class="text3">
+1-1.ベーシックタイプ 飾り紐変更なし<br>
+　　→リボンの生地を「単色」から選ぶ、飾り紐変更なし<br>
+　　　　　リボン2つの場合…4000円<br>
+　　　　　リボン3つの場合…4500円<br>
+</p>
+
+
+<p class="text3">
+1-2.ベーシックタイプ 飾り紐変更あり<br>
+　　→リボンの生地を「単色」から選ぶ、飾り紐変更あり<br>
+　　　　　リボン2つの場合…4500円<br>
+　　　　　リボン3つの場合…5000円<br>
+
+</p>
+
+
+
+<p class="text3">
+2-1.カスタマイズタイプ<br>
+　　→「ベロア生地」or「レース」or「模様1」から選ぶ<br>
+　　　　　リボン1つを変更する場合→＋500円<br>
+　　　　　リボン2つを変更する場合→＋1000円<br>
+　　　　　リボン3つを変更する場合→＋1500円<br>
+</p>
+
+
+
+<p class="text3">
+2-2.カスタマイズタイプ2<br>
+　　→「模様2」から選ぶ<br>
+　　　　　リボン1つを変更する場合→＋1000円<br>
+　　　　　リボン2つを変更する場合→＋2000円<br>
+　　　　　リボン3つを変更する場合→＋3000円<br>
+</p>
+
+例えば…<br>
+
+　　　 ①リボンの個数…3個（4500円）<br>
+　　 　②リボンのサイズ…標準<br>
+　　 　③リボンの柄…小→花柄ピンク(＋1000円)<br>
+　　　　　　　　　　 中→白黒チェック(＋500円)<br>
+　　　　　　　　　　 大→白(＋0円)<br>
+　　 　④真ん中の色…ピンク<br>
+　　 　⑤飾り紐→黒<br>
+　　　の場合…4500円＋1000円＋500円＝6000円<br>
+
+<br>
+
+<p>
+ややこしいかと思いますので、まずはを理想のおリボンを
+お気軽にお伝えください。商品の金額とともに
+簡単な完成イメージの写真をお送りいたしますので、ご参考ください。<br>
+
+無理な購入催促などは一切しておりませんので、
+お気軽にお問い合わせください。<br>
+</p>
+
+
+
+</div><!--box2-->
+</div><!--box1-->
+</div><!--box3-->
+
+
+
+
+</div><!--all-->
+
+
+
+<footer>
+
+
+<div class="underbox1">
+<ul class="underul1">
+ <li class="underli1"><a href="工房top5.html">TOP</a></ll>
+ <li class="underli1"><a href="想い1.html">工房Beniの想い</a></ll>
+ <li class="underli1"><a href="こんなシーンに6.html">こんなシーンに</a></ll>
+ <li class="underli1"><a href="オリジナル髪飾りを作る1.html">Myリボンを作る</a></ll>
+</ul>
+
+<ul class="underul1">
+ <li class="underli1"><a href="髪飾り一覧2.html">髪飾り一覧</a></ll>
+ <li class="underli1"><a href="布のカラー・柄一覧.html">生地の色・模様一覧</a></ll>
+ <li class="underli1"><a href="商品購入1.html">商品のご購入</a></ll>
+ <li class="underli1"><a href="工房情報1.html">工房情報</a></ll>
+ <li class="underli1"><a href="工房情報1.html">よくある質問</a></ll>
+</ul>
+
+
+<ul class="underul1">
+ <li class="underli1"><a href="">LINE</a></ll>
+ <li class="underli1"><a href="https://www.instagram.com/workshop_beni/" target="_blank"">Instagram</a></ll>
+ <li class="underli1"><a href="">メルカリ</a></ll>
+ <li class="underli1"><a href="https://minne.com/@beni-shop" target="_blank">minne</a></ll>
+</ul>
+</div><!--underbox1-->
+
+
+
+<!--
+<ul class="underul2">
+ <li class="underli2"><a href=""><img alt="ラインの画像" src="img/line.png"></a></ll>
+ <li class="underli2"><a href="https://www.instagram.com/workshop_beni/" target="_blank""><img alt="インスタの画像" src="img/Instagram-copy.png"></a></ll>
+ <li class="underli2"><a href=""><img alt="メルカリの画像" src="img/mercari1-copy.png"></a></ll>
+ <li class="underli2"><a href="https://minne.com/@beni-shop" target="_blank"><img alt="ミンネの画像" src="img/minne1-copy.png"></a></ll>
+</ul>
+</div><!--underbox1-->
+
+
+
+
+<p class="under">
+ Copyright &copy; 2025 handmade.kobo.Beni All rights reserved.
+</p>
+
+</footer>
+
+
+
+</body>
+
+</html>
